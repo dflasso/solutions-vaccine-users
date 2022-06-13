@@ -45,7 +45,7 @@ public class VaccineTypeConverter implements AttributeConverter<VaccineType, Str
 		  															.build();
 		  			apiError.addSubError(subError);
 		  			
-		  			throw new BusinessRulesException(apiError);
+		  			return  new BusinessRulesException(apiError);
 		          });
 	}
 
